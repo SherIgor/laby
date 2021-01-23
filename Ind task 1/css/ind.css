@@ -1,0 +1,1180 @@
+@media (max-width: 600px) {
+    @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        src: local(''),
+             url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+             url('../fonts/poppins-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+      /* poppins-500 - latin */
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        src: local(''),
+             url('../fonts/poppins-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+             url('../fonts/poppins-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+      /* poppins-700 - latin */
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        src: local(''),
+             url('../fonts/poppins-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+             url('../fonts/poppins-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    html{
+        box-sizing: border-box;  /* меняется формула расчета дивов, падинги теперь внутри а не снаружи  */
+    }  
+    *, *::before, *::after{
+        box-sizing: inherit;
+    }
+    body{
+        max-width: 375px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;    
+        color: #000000;
+        position: relative;
+        margin: 0 auto;
+    }
+    .main {
+       max-width: 375px; 
+    }
+    .header {
+        position: absolute;
+        width: 375px;
+        height: 800px;
+        left: 0px;
+        top: 0px;
+    }
+    .background {
+        position: absolute;
+        width: 375px;
+        height: 650px;
+        left: 0px;
+        top: 0px;
+        background: #D8D8D8;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+    .menubar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: absolute;
+        width: 386px;
+        height: 24px;
+        left: 30px;
+        top: 30px;
+    }
+    .ulmenu {
+        display: flex;
+        flex-wrap: wrap; 
+        margin: 0px;   
+    }
+    .hitem {
+        margin-right: 66px;
+    }
+    .hitem:last-chield {
+        margin-right: 0px;
+    }
+    .linkmenu {
+        font-size: 16px;
+        line-height: 24px;
+        color: black;
+        text-decoration: none;
+    }
+    .linkmenu:hover, .linkmenu:focus, .linkmenu:active{
+        opacity: .8;
+    }
+    .myname {
+        position: absolute;
+        width: 433px;
+        height: 200px;
+        left: 10px;
+        top: 80px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 90px;
+        color: #999999;;
+    }
+    .line {
+        position: absolute;
+        width: 355px;
+        height: 1px;
+        left: 10px;
+        top: 304px;
+        background: #D8D8D8;
+    }
+    .paragraph {
+        position: absolute;
+    width: 355px;
+    height: 200px;
+    left: 10px;
+    top: 314px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    /* or 200% */
+    letter-spacing: 0.385714px;
+    color: #6D6D6D;
+    }
+    .social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    width: 199px;
+    height: 24px;
+    left: 10px;
+    top: 520px;
+    }
+    .smenu {
+        display: flex;
+        flex-wrap: wrap; 
+        margin: 0px;
+    }
+    .sitem {
+        margin-right: 23px;
+    }
+    .links {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 6.33143px;
+        color: black;
+        text-decoration: none;
+    }
+    .links:hover, .links:focus, .links:active{
+        opacity: .8;
+    }
+    .button {
+        position: absolute;
+        width: 353px;
+        height: 110px;
+        left: 10px;
+        top: 585px;
+        background: #FFE8E8;
+    }
+    .textbutton {
+    position: absolute;
+    width: 280px;
+    height: 36px;
+    left: 40px;
+    top: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    letter-spacing: 8.29714px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    }
+    .button:hover, .button:focus, .button:active{
+        opacity: .7;
+    }
+    .work {
+    position: absolute;
+    width: 375px;
+    height: 652px;
+    left: 0px;
+    top: 700px;
+    }
+    .worktitle {
+    position: absolute;
+    height: 120px;
+    width: 219px;
+    left: 70px;
+    top: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 120px;
+    color: #999999;
+    }
+    .cupcof {
+    position: absolute;
+    width: 375px;
+    height: 75px;
+    left: 10px;
+    top: 142px;
+    }
+    .cupoft {
+    position: absolute;
+    height: 33px;
+    width: 250px;
+    top: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 0.642857px;
+    color: #6D6D6D;
+    }
+    .date1 {
+    position: absolute;
+    height: 36px;
+    width: 200px;
+    left: 0px;
+    top: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.385714px;
+    color: #7E7C7C;
+    mix-blend-mode: normal;
+    opacity: 0.6
+    }
+    .concept1 {
+    position: absolute;
+    height: 33px;
+    left: 44.31%;
+    right: 8.47%;
+    top: 7px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.385714px;
+    color: #6D6D6D;
+    }
+    .pillblender1 {
+    position: absolute;
+    width: 80px;
+    height: 33px;
+    left: 44.31%;
+    top: 80px;
+    background: #EDEDED;
+    border-radius: 16px;
+    }
+    .pillstext {
+    text-align: center;  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 33px;
+    letter-spacing: 0.257143px;
+    color: #968A8A;
+    }
+    .pillPH {
+        position: absolute;
+        width: 100px;
+        height: 33px;
+        left: 67.96%;
+        top: 80px;
+        background: #EDEDED;
+        border-radius: 16px;
+        }
+    .donuts {
+        position: absolute;
+        width: 375px;
+        height: 75px;
+        left: 0px;
+        top: 120px;    
+    }
+    .Kitchen {
+        position: absolute;
+        width: 375px;
+        height: 75px;
+        left: 0px;
+        top: 240px;    
+    }
+    .House {
+        position: absolute;
+        width: 375px;
+        height: 75px;
+        left: 0px;
+        top: 360px;    
+    }
+    .projects {
+    position: absolute;
+    width: 375px;
+    height: 1800px;
+    left: 23px;
+    top: 1350px;
+    }
+    .projectstext {
+    position: absolute;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 120px;
+    color: #999999;
+    }
+    .project1 {
+    position: absolute;
+    width: 330px;
+    height: 700px;
+    left: 0px;
+    top: 172px;
+    }
+    .photo1 {
+    position: absolute;
+    width: 330px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    }
+    .ph1 {
+        width: 330px;
+        height: 300px; 
+    }
+    .title1 {
+    position: absolute;
+    height: 90px;
+    left: 0px;
+    top: 300px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 90px;
+    letter-spacing: -0.257143px;
+    color: #999999;
+    }
+    .title2 {
+    position: absolute;
+    width: 330px;
+    height: 132px;
+    left: 0px;
+    top: 380px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.385714px;
+    color: #6D6D6D;
+    }
+    .project2 {
+    position: absolute;
+    width: 330px;
+    height: 700px;
+    left: 0px;
+    top: 675px;    
+    }
+    .photo2 {
+        position: absolute;
+        width: 330px;
+        height: 300px;
+        left: 0px;
+        top: 0px;
+    }
+    .title3 {
+        position: absolute;
+        height: 90px;
+        left: 0px;
+        top: 300px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 90px;
+        letter-spacing: -0.257143px;
+        color: #999999;    
+    }
+    .title4 {
+    position: absolute;
+    width: 330px;
+    height: 132px;
+    left: 0px;
+    top: 380px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: left;
+    letter-spacing: 0.385714px;
+    color: #6D6D6D;
+    }
+    .project3 {
+        position: absolute;
+        width: 1202px;
+        height: 590px;
+        left: 0px;
+        top: 1240px;    
+    }
+    .abouts {
+    position: absolute;
+    width: 375px;
+    height: 1340px;
+    left: 0px;
+    top: 3150px;
+    }
+    .abouttexts {
+    position: absolute;
+    height: 120px;
+    left: 10px;
+    top: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 100px;
+    color: #999999;
+    }
+    .paras1 {
+    position: absolute;
+    width: 355px;
+    height: 600px;
+    left: 10px;
+    top: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.385714px;
+    color: #6D6D6D;
+    }
+    .imageselect {
+    position: absolute;
+    width: 375px;
+    height: 416px;
+    left: 0px;
+    top: 483px;
+    }
+    .infocard {
+    position: absolute;
+    width: 350px;
+    height: 276px;
+    left: 13px;
+    top: 140px;
+    background: #FFE8E8;
+    }
+    .bgcard {
+    width: 375px;
+    height: 286px;
+    }
+    .bg {
+        width: 375px;
+        height: 286px;    
+    }
+    .email {
+    position: absolute;
+    width: 225px;
+    height: 52px;
+    left: 40px;
+    top: 40px;
+    }
+    .info1 {
+        position: absolute;
+        height: 24px;
+        left: 0px;
+        top: 0px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: 6.33143px;
+        color: #7E7C7C;
+        mix-blend-mode: normal;
+        opacity: 0.6;    
+    }
+    .info2 {
+    position: absolute;
+    height: 27px;
+    left: 0%;
+    right: 0%;
+    top: 19px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.385714px;
+    color: #2E2E2E;
+    }
+    .role {
+    position: absolute;
+    width: 225px;
+    height: 52px;
+    left: 40px;
+    top: 112px;
+    }
+    .phone {
+    position: absolute;
+    width: 225px;
+    height: 52px;
+    left: 40px;
+    top: 184px;
+    }
+    .para2 {
+    position: absolute;
+    width: 355px;
+    left: 10px;
+    top: 450px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.385714px;
+    color: #6D6D6D;
+    }
+    .para3 {
+    position: absolute;
+    width: 355px;
+    left: 10px;
+    top: 1110px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.385714px;
+    color: #6D6D6D;
+    }
+    .img {
+        position: absolute;
+        left: 28px;
+        top: 1800px ;
+    }
+    .ir {
+        width: 120px;
+        height: 76px;    
+    }
+    .footer {
+    position: absolute;
+    width: 375px;
+    height: 208px;
+    left: 0px;
+    top: 5343px;
+    background: #d6b6b6;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    }
+    .by {
+    position: absolute;
+    width: 375px;
+    height: 36px;
+    left: 0px;
+    text-align: center;
+    top: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.385714px;
+    color: #251616;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    }
+    .byy {
+        position: absolute;
+        width: 375px;
+        height: 36px;
+        left: 0px;
+        text-align: center;
+        top: 112px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.385714px;
+        color: #251616;
+        mix-blend-mode: normal;
+        opacity: 0.8; 
+    }
+}
+@media (min-width: 600px){
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/poppins-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/poppins-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html{
+    box-sizing: border-box;  /* меняется формула расчета дивов, падинги теперь внутри а не снаружи  */
+}  
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;    
+    color: #000000;
+    position: relative;
+    margin: 0 auto;
+}
+.main {
+   width: 1440px; 
+}
+.header {
+    position: absolute;
+    width: 1240px;
+    height: 769px;
+    left: 200px;
+    top: 0px;
+}
+.background {
+    position: absolute;
+    width: 1119px;
+    height: 713px;
+    left: 121px;
+    top: 0px;
+    background: #D8D8D8;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+.menubar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    width: 386px;
+    height: 24px;
+    left: 735px;
+    top: 60.5px;
+}
+.ulmenu {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0px;   
+}
+.hitem {
+    margin-right: 66px;
+}
+.hitem:last-chield {
+    margin-right: 0px;
+}
+.linkmenu {
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+}
+.linkmenu:hover, .linkmenu:focus, .linkmenu:active{
+    opacity: .8;
+}
+.myname {
+    position: absolute;
+    width: 433px;
+    height: 430px;
+    left: 0px;
+    top: 184px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 150px;
+    color: #999999;;
+}
+.line {
+    position: absolute;
+    width: 1px;
+    height: 238px;
+    left: 493px;
+    top: 324px;
+    background: #D8D8D8;
+}
+.paragraph {
+    position: absolute;
+width: 554px;
+height: 145px;
+left: 567px;
+top: 324px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+/* or 200% */
+letter-spacing: 0.385714px;
+color: #6D6D6D;
+}
+.social {
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-content: space-between;
+position: absolute;
+width: 199px;
+height: 24px;
+left: 567px;
+top: 539px;
+}
+.smenu {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0px;
+}
+.sitem {
+    margin-right: 23px;
+}
+.links {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 6.33143px;
+    color: black;
+    text-decoration: none;
+}
+.links:hover, .links:focus, .links:active{
+    opacity: .8;
+}
+.button {
+    position: absolute;
+    width: 353px;
+    height: 113px;
+    left: 200px;
+    top: 656px;
+    background: #FFE8E8;
+}
+.textbutton {
+position: absolute;
+width: 280px;
+height: 36px;
+left: 40px;
+top: 40px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+letter-spacing: 8.29714px;
+color: #000000;
+mix-blend-mode: normal;
+opacity: 0.6;
+}
+.button:hover, .button:focus, .button:active{
+    opacity: .7;
+}
+.work {
+position: absolute;
+width: 1202px;
+height: 652px;
+left: 119px;
+top: 869px;
+}
+.worktitle {
+position: absolute;
+height: 120px;
+width: 219px;
+left: 0;
+top: 869;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 120px;
+color: #999999;
+}
+.cupcof {
+position: absolute;
+width: 1199px;
+height: 75px;
+left: 0px;
+top: 172px;
+}
+.cupoft {
+position: absolute;
+height: 33px;
+width: 250px;
+top: 0px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 33px;
+letter-spacing: 0.642857px;
+color: #6D6D6D;
+}
+.date1 {
+position: absolute;
+height: 36px;
+width: 200px;
+left: 0px;
+top: 39px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.385714px;
+color: #7E7C7C;
+mix-blend-mode: normal;
+opacity: 0.6
+}
+.concept1 {
+position: absolute;
+height: 33px;
+left: 44.31%;
+right: 8.47%;
+top: 0px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 33px;
+letter-spacing: 0.385714px;
+color: #6D6D6D;
+}
+.pillblender1 {
+position: absolute;
+width: 80px;
+height: 33px;
+left: 44.31%;
+top: 39px;
+background: #EDEDED;
+border-radius: 16px;
+}
+.pillstext {
+text-align: center;  
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 33px;
+letter-spacing: 0.257143px;
+color: #968A8A;
+}
+.pillPH {
+    position: absolute;
+    width: 100px;
+    height: 33px;
+    left: 51.96%;
+    top: 39px;
+    background: #EDEDED;
+    border-radius: 16px;
+    }
+.donuts {
+    position: absolute;
+    width: 1199px;
+    height: 75px;
+    left: 0px;
+    top: 120px;    
+}
+.Kitchen {
+    position: absolute;
+    width: 1199px;
+    height: 75px;
+    left: 0px;
+    top: 240px;    
+}
+.House {
+    position: absolute;
+    width: 1199px;
+    height: 75px;
+    left: 0px;
+    top: 360px;    
+}
+.projects {
+position: absolute;
+width: 1202px;
+height: 2182px;
+left: 119px;
+top: 1621px;
+}
+.projectstext {
+position: absolute;
+height: 120px;
+left: 0px;
+top: 0px;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 120px;
+color: #999999;
+}
+.project1 {
+position: absolute;
+width: 1202px;
+height: 590px;
+left: 0px;
+top: 172px;
+}
+.photo1 {
+position: absolute;
+width: 662px;
+height: 590px;
+left: 0px;
+top: 0px;
+}
+.ph1 {
+    width: 662px;
+    height: 590px; 
+}
+.title1 {
+position: absolute;
+height: 90px;
+left: 742px;
+top: 80px;
+font-style: normal;
+font-weight: bold;
+font-size: 60px;
+line-height: 90px;
+letter-spacing: -0.257143px;
+color: #999999;
+}
+.title2 {
+position: absolute;
+width: 460px;
+height: 132px;
+left: 742px;
+top: 204px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 33px;
+letter-spacing: 0.385714px;
+color: #6D6D6D;
+}
+.project2 {
+position: absolute;
+width: 1202px;
+height: 590px;
+left: 0px;
+top: 882px;    
+}
+.photo2 {
+position: absolute;
+width: 662px;
+height: 590px;
+right: 0px;
+top: 0px;
+}
+.title3 {
+    position: absolute;
+    height: 90px;
+    right: 742px;
+    top: 80px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+    letter-spacing: -0.257143px;
+    color: #999999;    
+}
+.title4 {
+position: absolute;
+width: 460px;
+height: 132px;
+left: 0px;
+top: 204px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 33px;
+text-align: right;
+letter-spacing: 0.385714px;
+color: #6D6D6D;
+}
+.project3 {
+    position: absolute;
+    width: 1202px;
+    height: 590px;
+    left: 0px;
+    top: 1592px;    
+}
+.abouts {
+position: absolute;
+width: 1202px;
+height: 1340px;
+left: 119px;
+top: 3903px;
+}
+.abouttexts {
+position: absolute;
+height: 120px;
+left: 0px;
+top: 0px;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 120px;
+color: #999999;
+}
+.paras1 {
+position: absolute;
+left: 0px;
+top: 171px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.385714px;
+color: #6D6D6D;
+}
+.imageselect {
+position: absolute;
+width: 1202px;
+height: 416px;
+left: 0px;
+top: 483px;
+}
+.infocard {
+position: absolute;
+width: 430px;
+height: 276px;
+right: 120px;
+top: 140px;
+background: #FFE8E8;
+}
+.bgcard {
+width: 1202px;
+height: 286px;
+}
+.bg {
+    width: 1202px;
+    height: 286px;    
+}
+.email {
+position: absolute;
+width: 225px;
+height: 52px;
+left: 40px;
+top: 40px;
+}
+.info1 {
+    position: absolute;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 6.33143px;
+    color: #7E7C7C;
+    mix-blend-mode: normal;
+    opacity: 0.6;    
+}
+.info2 {
+position: absolute;
+height: 27px;
+left: 0%;
+right: 0%;
+top: 19px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.385714px;
+color: #2E2E2E;
+}
+.role {
+position: absolute;
+width: 225px;
+height: 52px;
+left: 40px;
+top: 112px;
+}
+.phone {
+position: absolute;
+width: 225px;
+height: 52px;
+left: 40px;
+top: 184px;
+}
+.para2 {
+position: absolute;
+width: 544px;
+left: 0px;
+top: 346px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.385714px;
+color: #6D6D6D;
+}
+.para3 {
+position: absolute;
+left: 0px;
+top: 972px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.385714px;
+color: #6D6D6D;
+}
+.img {
+    position: absolute;
+    left: 28px;
+    top: 1264px ;
+}
+.ir {
+    width: 120px;
+    height: 76px;    
+}
+.footer {
+position: absolute;
+width: 1440px;
+height: 208px;
+left: 0px;
+top: 5343px;
+background: #d6b6b6;
+mix-blend-mode: normal;
+opacity: 0.5;
+}
+.by {
+position: absolute;
+width: 1440px;
+height: 36px;
+left: 0px;
+text-align: center;
+top: 60px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.385714px;
+color: #251616;
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+.byy {
+    position: absolute;
+    width: 1440px;
+    height: 36px;
+    left: 0px;
+    text-align: center;
+    top: 112px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.385714px;
+    color: #251616;
+    mix-blend-mode: normal;
+    opacity: 0.8; 
+}
+}
